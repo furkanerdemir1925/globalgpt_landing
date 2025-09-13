@@ -309,101 +309,20 @@ body {
 .dashboard-preview {
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.dashboard-mockup {
-    background: #020817;
+.dashboard-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: flex;
-    min-height: 500px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.dashboard-sidebar {
-    width: 200px;
-    background: #020817;
-    padding: 2rem 1rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sidebar-item {
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #9ca3af;
-}
-
-.sidebar-item.active {
-    background: #020817;
-    color: #1D4ED8;
-}
-
-.sidebar-item:hover {
-    background: #020817;
-    color: #ffffff;
-}
-
-.dashboard-content {
-    flex: 1;
-    padding: 2rem;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.stat-card {
-    background: #020817;
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.stat-card h3 {
-    font-size: 0.9rem;
-    color: #9ca3af;
-    margin-bottom: 0.5rem;
-}
-
-.stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1D4ED8;
-}
-
-.charts-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.chart-card {
-    background: #020817;
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.chart-card h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #e5e7eb;
-}
-
-.chart-placeholder {
-    height: 150px;
-    background: #020817;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ca3af;
+.dashboard-image:hover {
+    transform: translateY(-5px);
 }
 
 /* Testimonials Section */
