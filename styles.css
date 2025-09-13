@@ -44,7 +44,8 @@ body {
     align-items: center;
     gap: 0.5rem;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .logo-img {
@@ -84,6 +85,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-login:hover {
@@ -99,6 +102,8 @@ body {
     border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-signup:hover {
@@ -189,12 +194,13 @@ body {
     padding: 1rem 2rem;
     border-radius: 100px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-get-started:hover {
@@ -259,22 +265,23 @@ body {
 }
 
 .btn-generate {
-    background: #1D4ED8;
-    border: none;
+    background: transparent;
+    border: 1px solid #1D4ED8;
     color: #ffffff;
     padding: 1rem 2rem;
     border-radius: 100px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-generate:hover {
-    background: #1e40af;
+    background: #1D4ED8;
     color: #ffffff;
     transform: translateY(-3px);
 }
@@ -286,9 +293,10 @@ body {
     padding: 1rem 2rem;
     border-radius: 100px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-download:hover {
@@ -588,10 +596,11 @@ body {
     color: #ffffff;
     border-radius: 100px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 2rem;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .pricing-btn.primary {
@@ -652,9 +661,10 @@ body {
     padding: 1rem 2rem;
     border-radius: 100px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .btn-create-account:hover {
