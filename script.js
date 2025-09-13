@@ -41,14 +41,63 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollY = currentScrollY;
     });
 
+    // Testimonial data
+    const testimonials = {
+        'wave-square': {
+            text: "GlobalGPT'nin merkezi dashboard'u sayesinde tüm AI modellerimizi tek yerden yönetebiliyoruz. Gerçekten hayat kurtarıcı!",
+            name: "Ahmet Yılmaz",
+            title: "Yazılım Geliştirici"
+        },
+        'globe': {
+            text: "Uluslararası projelerimizde GlobalGPT'nin global özellikleri çok işimize yarıyor. Ekipler arası koordinasyon çok kolaylaştı.",
+            name: "Zeynep Kaya",
+            title: "Proje Yöneticisi"
+        },
+        'bolt': {
+            text: "Hız konusunda inanılmaz! Eskiden saatler süren AI kurulumları artık dakikalar içinde hazır. Çok etkileyici.",
+            name: "Mehmet Demir",
+            title: "Sistem Uzmanı"
+        },
+        'comment': {
+            text: "Ekip içi iletişim özellikleri harika. AI projelerimizde gerçek zamanlı geri bildirim alabiliyoruz.",
+            name: "Elif Özkan",
+            title: "Veri Analisti"
+        },
+        'shopping-bag': {
+            text: "Maliyet optimizasyonu özellikleri bütçemizi %30 azalttı. AI kullanım maliyetlerimizi çok daha iyi kontrol edebiliyoruz.",
+            name: "Can Arslan",
+            title: "Mali İşler Uzmanı"
+        },
+        'search': {
+            text: "Analitik ve arama özellikleri sayesinde AI modellerimizin performansını çok daha iyi anlayabiliyoruz.",
+            name: "Selin Aktaş",
+            title: "AI Araştırmacısı"
+        }
+    };
+
     // Testimonial icon interactions
     const iconBoxes = document.querySelectorAll('.icon-box');
+    const testimonialText = document.getElementById('testimonial-text');
+    const authorName = document.getElementById('author-name');
+    const authorTitle = document.getElementById('author-title');
+
     iconBoxes.forEach(box => {
         box.addEventListener('click', function() {
             // Remove active class from all icons
             iconBoxes.forEach(icon => icon.classList.remove('active'));
             // Add active class to clicked icon
             this.classList.add('active');
+            
+            // Get the icon class to determine which testimonial to show
+            const iconClass = this.querySelector('i').classList[1]; // Get the second class (e.g., 'fa-wave-square')
+            const iconKey = iconClass.replace('fa-', ''); // Remove 'fa-' prefix
+            
+            // Update testimonial content
+            if (testimonials[iconKey]) {
+                testimonialText.textContent = testimonials[iconKey].text;
+                authorName.textContent = testimonials[iconKey].name;
+                authorTitle.textContent = testimonials[iconKey].title;
+            }
         });
     });
 
