@@ -546,23 +546,26 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 0.8rem;
+    overflow: hidden;
+}
+
+.pricing-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .pricing-icon.hobby {
     background: #10b981;
-    color: #ffffff;
 }
 
 .pricing-icon.pro {
     background: #8b5cf6;
-    color: #ffffff;
 }
 
 .pricing-icon.enterprise {
     background: #1D4ED8;
-    color: #ffffff;
 }
 
 .pricing-header h3 {
