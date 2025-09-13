@@ -640,6 +640,35 @@ body::before {
     position: relative;
 }
 
+.cta-frame {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cta-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(29, 78, 216, 0.05), rgba(139, 92, 246, 0.05));
+    border-radius: 24px;
+    z-index: -1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
 .cta-content h2 {
     font-size: 3rem;
     font-weight: 700;
@@ -791,6 +820,18 @@ body::before {
         margin-bottom: 0;
         white-space: nowrap;
     }
+
+    .cta-frame {
+        padding: 3rem 2rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -811,5 +852,17 @@ body::before {
     .btn-download {
         width: 100%;
         max-width: 300px;
+    }
+
+    .cta-frame {
+        padding: 2rem 1.5rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 0.9rem;
     }
 }
