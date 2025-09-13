@@ -116,21 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Star animation enhancement
-    const stars = document.querySelectorAll('.star');
-    stars.forEach((star, index) => {
-        star.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(2)';
-            this.style.background = '#ffffff';
-            this.style.boxShadow = '0 0 20px #3b82f6';
-        });
-        
-        star.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-            this.style.background = '#3b82f6';
-            this.style.boxShadow = 'none';
-        });
-    });
+    // Star animation enhancement - Removed
 
     // Dashboard sidebar interactions
     const sidebarItems = document.querySelectorAll('.sidebar-item');
@@ -141,21 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        const stars = document.querySelectorAll('.star');
-        
-        if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        }
-        
-        stars.forEach((star, index) => {
-            const speed = 0.5 + (index * 0.1);
-            star.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
+    // Parallax effect for hero section - Removed
 
     // Typing effect for hero title
     const heroTitle = document.querySelector('.hero-title');

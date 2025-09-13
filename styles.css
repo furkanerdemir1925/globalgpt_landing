@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Urbanist', sans-serif;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    background: #020817;
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
@@ -25,8 +25,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(10px);
+    background: #020817;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -126,7 +125,7 @@ body {
 
 .beta-badge {
     display: inline-block;
-    background: rgba(29, 78, 216, 0.2);
+    background: #020817;
     border: 1px solid rgba(29, 78, 216, 0.5);
     color: #1D4ED8;
     padding: 0.5rem 1rem;
@@ -176,64 +175,12 @@ body {
     box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
 }
 
-/* Stars Animation */
-.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #1D4ED8;
-    border-radius: 50%;
-    animation: twinkle 3s infinite;
-}
-
-.star-1 {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.star-2 {
-    top: 30%;
-    right: 15%;
-    animation-delay: 1s;
-}
-
-.star-3 {
-    top: 60%;
-    left: 20%;
-    animation-delay: 2s;
-}
-
-.star-4 {
-    top: 70%;
-    right: 25%;
-    animation-delay: 0.5s;
-}
-
-.star-5 {
-    top: 40%;
-    left: 50%;
-    animation-delay: 1.5s;
-}
-
-@keyframes twinkle {
-    0%, 100% { opacity: 0.3; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.2); }
-}
+/* Stars Animation - Removed */
 
 /* Trending Prompts Section */
 .trending-prompts {
     padding: 6rem 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: #020817;
 }
 
 .section-title {
@@ -304,7 +251,7 @@ body {
 }
 
 .dashboard-mockup {
-    background: rgba(20, 20, 20, 0.8);
+    background: #020817;
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -314,7 +261,7 @@ body {
 
 .dashboard-sidebar {
     width: 200px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #020817;
     padding: 2rem 1rem;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -329,12 +276,12 @@ body {
 }
 
 .sidebar-item.active {
-    background: rgba(29, 78, 216, 0.2);
+    background: #020817;
     color: #1D4ED8;
 }
 
 .sidebar-item:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: #020817;
     color: #ffffff;
 }
 
@@ -351,7 +298,7 @@ body {
 }
 
 .stat-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: #020817;
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -376,7 +323,7 @@ body {
 }
 
 .chart-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: #020817;
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -390,7 +337,7 @@ body {
 
 .chart-placeholder {
     height: 150px;
-    background: linear-gradient(45deg, rgba(29, 78, 216, 0.1), rgba(139, 92, 246, 0.1));
+    background: #020817;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -432,7 +379,7 @@ body {
 .icon-box.active {
     border-color: #1D4ED8;
     color: #1D4ED8;
-    background: rgba(29, 78, 216, 0.1);
+    background: #020817;
 }
 
 .icon-box:hover {
@@ -479,7 +426,7 @@ body {
 /* Pricing Section */
 .pricing {
     padding: 6rem 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: #020817;
 }
 
 .section-subtitle {
@@ -498,7 +445,7 @@ body {
 }
 
 .pricing-card {
-    background: rgba(20, 20, 20, 0.8);
+    background: #020817;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 2rem;
@@ -666,7 +613,7 @@ body {
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: #020817;
     padding: 3rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
