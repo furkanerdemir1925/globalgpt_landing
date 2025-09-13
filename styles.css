@@ -48,24 +48,11 @@ body {
     font-weight: 700;
 }
 
-.logo-icon {
+.logo-img {
     width: 32px;
     height: 32px;
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-    border-radius: 50%;
-    position: relative;
-}
-
-.logo-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 16px;
-    height: 16px;
-    background: #ffffff;
-    border-radius: 50%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px #1D4ED8);
 }
 
 .nav-links {
@@ -81,7 +68,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #3b82f6;
+    color: #1D4ED8;
 }
 
 .nav-actions {
@@ -100,12 +87,12 @@ body {
 }
 
 .btn-login:hover {
-    border-color: #3b82f6;
-    color: #3b82f6;
+    border-color: #1D4ED8;
+    color: #1D4ED8;
 }
 
 .btn-signup {
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    background: #1D4ED8;
     border: none;
     color: #ffffff;
     padding: 0.5rem 1.5rem;
@@ -116,7 +103,8 @@ body {
 
 .btn-signup:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 20px rgba(29, 78, 216, 0.3);
+    background: #1e40af;
 }
 
 /* Hero Section */
@@ -137,9 +125,9 @@ body {
 
 .beta-badge {
     display: inline-block;
-    background: rgba(59, 130, 246, 0.2);
-    border: 1px solid rgba(59, 130, 246, 0.5);
-    color: #3b82f6;
+    background: rgba(29, 78, 216, 0.2);
+    border: 1px solid rgba(29, 78, 216, 0.5);
+    color: #1D4ED8;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -150,7 +138,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #ffffff, #3b82f6);
+    background: linear-gradient(45deg, #ffffff, #1D4ED8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -201,7 +189,7 @@ body {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #3b82f6;
+    background: #1D4ED8;
     border-radius: 50%;
     animation: twinkle 3s infinite;
 }
@@ -292,7 +280,7 @@ body {
 }
 
 .btn-download {
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(45deg, #1D4ED8, #8b5cf6);
     border: none;
     color: #ffffff;
     padding: 1rem 2rem;
@@ -305,7 +293,7 @@ body {
 
 .btn-download:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 15px 30px rgba(29, 78, 216, 0.3);
 }
 
 /* Dashboard Preview */
@@ -340,8 +328,8 @@ body {
 }
 
 .sidebar-item.active {
-    background: rgba(59, 130, 246, 0.2);
-    color: #3b82f6;
+    background: rgba(29, 78, 216, 0.2);
+    color: #1D4ED8;
 }
 
 .sidebar-item:hover {
@@ -377,7 +365,7 @@ body {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: #1D4ED8;
 }
 
 .charts-section {
@@ -401,7 +389,7 @@ body {
 
 .chart-placeholder {
     height: 150px;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    background: linear-gradient(45deg, rgba(29, 78, 216, 0.1), rgba(139, 92, 246, 0.1));
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -441,14 +429,14 @@ body {
 }
 
 .icon-box.active {
-    border-color: #3b82f6;
-    color: #3b82f6;
-    background: rgba(59, 130, 246, 0.1);
+    border-color: #1D4ED8;
+    color: #1D4ED8;
+    background: rgba(29, 78, 216, 0.1);
 }
 
 .icon-box:hover {
-    border-color: #3b82f6;
-    color: #3b82f6;
+    border-color: #1D4ED8;
+    color: #1D4ED8;
 }
 
 .testimonial-content {
@@ -473,7 +461,7 @@ body {
 .author-avatar {
     width: 50px;
     height: 50px;
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(45deg, #1D4ED8, #8b5cf6);
     border-radius: 50%;
 }
 
@@ -519,11 +507,11 @@ body {
 
 .pricing-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(59, 130, 246, 0.5);
+    border-color: rgba(29, 78, 216, 0.5);
 }
 
 .pricing-card.popular {
-    border-color: #3b82f6;
+    border-color: #1D4ED8;
     transform: scale(1.05);
 }
 
@@ -569,7 +557,7 @@ body {
 }
 
 .pricing-icon.enterprise {
-    background: #3b82f6;
+    background: #1D4ED8;
     color: #ffffff;
 }
 
@@ -710,7 +698,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: #3b82f6;
+    color: #1D4ED8;
 }
 
 .contact-info p {
