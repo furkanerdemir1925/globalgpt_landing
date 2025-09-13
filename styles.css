@@ -73,22 +73,22 @@ body {
 
 .nav-actions {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .btn-login {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #1D4ED8;
     color: #ffffff;
     padding: 0.5rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn-login:hover {
-    border-color: #1D4ED8;
-    color: #1D4ED8;
+    background: #1D4ED8;
+    color: #ffffff;
 }
 
 .btn-signup {
@@ -96,7 +96,7 @@ body {
     border: none;
     color: #ffffff;
     padding: 0.5rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -183,11 +183,11 @@ body {
 }
 
 .btn-get-started {
-    background: transparent;
-    border: 2px solid #ffffff;
+    background: #1D4ED8;
+    border: none;
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 12px;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -198,10 +198,10 @@ body {
 }
 
 .btn-get-started:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #1e40af;
+    color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(29, 78, 216, 0.3);
 }
 
 /* Stars Animation */
@@ -259,11 +259,11 @@ body {
 }
 
 .btn-generate {
-    background: transparent;
-    border: 2px solid #ffffff;
+    background: #1D4ED8;
+    border: none;
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 12px;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -274,17 +274,17 @@ body {
 }
 
 .btn-generate:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #1e40af;
+    color: #ffffff;
     transform: translateY(-3px);
 }
 
 .btn-download {
-    background: linear-gradient(45deg, #1D4ED8, #8b5cf6);
+    background: #1D4ED8;
     border: none;
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 12px;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -292,6 +292,7 @@ body {
 }
 
 .btn-download:hover {
+    background: #1e40af;
     transform: translateY(-3px);
     box-shadow: 0 15px 30px rgba(29, 78, 216, 0.3);
 }
@@ -582,10 +583,10 @@ body {
 .pricing-btn {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #ffffff;
-    background: transparent;
+    border: none;
+    background: #1D4ED8;
     color: #ffffff;
-    border-radius: 12px;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -594,17 +595,17 @@ body {
 }
 
 .pricing-btn.primary {
-    background: #ffffff;
-    color: #000000;
+    background: #1D4ED8;
+    color: #ffffff;
 }
 
 .pricing-btn:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #1e40af;
+    color: #ffffff;
 }
 
 .pricing-btn.primary:hover {
-    background: transparent;
+    background: #1e40af;
     color: #ffffff;
 }
 
@@ -645,11 +646,11 @@ body {
 }
 
 .btn-create-account {
-    background: transparent;
-    border: 2px solid #ffffff;
+    background: #1D4ED8;
+    border: none;
     color: #ffffff;
     padding: 1rem 2rem;
-    border-radius: 12px;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
@@ -657,10 +658,10 @@ body {
 }
 
 .btn-create-account:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #1e40af;
+    color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(29, 78, 216, 0.3);
 }
 
 /* Footer */
