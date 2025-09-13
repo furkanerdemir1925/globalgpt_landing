@@ -116,22 +116,41 @@ body {
     text-align: center;
     position: relative;
     padding: 0 2rem;
+    background: 
+        url('assets/bannerbackground2.png') center/cover,
+        url('assets/bannerbackground.png') center/cover;
+    background-blend-mode: normal, normal;
 }
 
 .hero-content {
     max-width: 800px;
-    z-index: 2;
+    z-index: 10;
+    position: relative;
 }
 
 .beta-badge {
-    display: inline-block;
-    background: #020817;
-    border: 1px solid rgba(29, 78, 216, 0.5);
-    color: #1D4ED8;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.beta-badge .beta-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.beta-badge .beta-text {
+    opacity: 0.48;
 }
 
 .hero-title {
@@ -175,7 +194,30 @@ body {
     box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
 }
 
-/* Stars Animation - Removed */
+/* Stars Animation */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 15% 25%, #ffffff, transparent),
+        radial-gradient(1px 1px at 85% 15%, #ffffff, transparent),
+        radial-gradient(3px 3px at 25% 75%, #ffffff, transparent),
+        radial-gradient(1px 1px at 75% 85%, #ffffff, transparent),
+        radial-gradient(2px 2px at 50% 10%, #ffffff, transparent),
+        radial-gradient(1px 1px at 90% 60%, #ffffff, transparent);
+    background-repeat: no-repeat;
+    animation: twinkle 4s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
 
 /* Trending Prompts Section */
 .trending-prompts {
