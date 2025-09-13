@@ -46,32 +46,38 @@ document.addEventListener('DOMContentLoaded', function() {
         'wave-square': {
             text: "GlobalGPT'nin merkezi dashboard'u sayesinde tüm AI modellerimizi tek yerden yönetebiliyoruz. Gerçekten hayat kurtarıcı!",
             name: "Ahmet Yılmaz",
-            title: "Yazılım Geliştirici"
+            title: "Yazılım Geliştirici",
+            photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
         },
         'globe': {
             text: "Uluslararası projelerimizde GlobalGPT'nin global özellikleri çok işimize yarıyor. Ekipler arası koordinasyon çok kolaylaştı.",
             name: "Zeynep Kaya",
-            title: "Proje Yöneticisi"
+            title: "Proje Yöneticisi",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
         },
         'bolt': {
             text: "Hız konusunda inanılmaz! Eskiden saatler süren AI kurulumları artık dakikalar içinde hazır. Çok etkileyici.",
             name: "Mehmet Demir",
-            title: "Sistem Uzmanı"
+            title: "Sistem Uzmanı",
+            photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
         },
         'comment': {
             text: "Ekip içi iletişim özellikleri harika. AI projelerimizde gerçek zamanlı geri bildirim alabiliyoruz.",
             name: "Elif Özkan",
-            title: "Veri Analisti"
+            title: "Veri Analisti",
+            photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
         },
         'shopping-bag': {
             text: "Maliyet optimizasyonu özellikleri bütçemizi %30 azalttı. AI kullanım maliyetlerimizi çok daha iyi kontrol edebiliyoruz.",
             name: "Can Arslan",
-            title: "Mali İşler Uzmanı"
+            title: "Mali İşler Uzmanı",
+            photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
         },
         'search': {
             text: "Analitik ve arama özellikleri sayesinde AI modellerimizin performansını çok daha iyi anlayabiliyoruz.",
             name: "Selin Aktaş",
-            title: "AI Araştırmacısı"
+            title: "AI Araştırmacısı",
+            photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
         }
     };
 
@@ -80,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const testimonialText = document.getElementById('testimonial-text');
     const authorName = document.getElementById('author-name');
     const authorTitle = document.getElementById('author-title');
+    const authorPhoto = document.getElementById('author-photo');
 
     iconBoxes.forEach(box => {
         box.addEventListener('click', function() {
@@ -97,6 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 testimonialText.textContent = testimonials[iconKey].text;
                 authorName.textContent = testimonials[iconKey].name;
                 authorTitle.textContent = testimonials[iconKey].title;
+                authorPhoto.src = testimonials[iconKey].photo;
+                authorPhoto.alt = testimonials[iconKey].name;
             }
         });
     });
